@@ -555,6 +555,9 @@
     <script src="js/customize.js"></script>
     <script>
       AOS.init();
+      window.addEventListener('scroll', function() {
+        AOS.refresh();
+      });
     </script>
   </body>
 </html>
