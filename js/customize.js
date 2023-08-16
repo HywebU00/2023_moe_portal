@@ -13,10 +13,16 @@ $(function () {
 
   // 政府輔導資源手冊 按鈕高度，是吃左方icon的高度
   $(document).ready(function() {
-    // 偵測 .img-container 的高度
-    var imgContainerHeight = $('.resourceList .img-container').height();
-    // 將高度值應用到 .focus a 的 style 中
-    $('a.focus').css('height', imgContainerHeight + 'px');
+    // 初始化
+    updateFocusHeight();
+    // 視窗大小調整時更新
+    $(window).on('resize', function() {
+      updateFocusHeight();
+    });
+    function updateFocusHeight() {
+      var imgContainerHeight = $('.resourceList .img-container').height();
+      $('a.focus').css('height', imgContainerHeight + 'px');
+    }
   });
 
   // btn_close clicked， .m_search add display:none;
