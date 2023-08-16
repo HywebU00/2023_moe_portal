@@ -4283,6 +4283,7 @@ footer .footer_icon img {
   margin: 0 auto;
   background: url(../images/bg_mp_4.jpg) 50% top no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 @media screen and (max-width: 767px) {
   .fatfooter {
@@ -8471,6 +8472,122 @@ body.noscroll {
   line-height: 1.25em;
 }
 
+.sideFunc {
+  position: fixed;
+  right: 20px;
+  bottom: 20%;
+  z-index: 100;
+}
+.sideFunc ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.sideFunc ul li {
+  margin: 2px 0;
+}
+.sideFunc ul li a {
+  display: block;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  line-height: 1.2;
+  position: relative;
+}
+.sideFunc ul li a b {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: initial;
+  right: -200px;
+  width: 190px;
+  height: 54px;
+  padding-right: 62px;
+  background: rgba(255, 255, 255, 0.6274509804);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  transform: translateY(-50%);
+  text-align: right;
+  border-radius: 30px;
+  color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row-reverse;
+  opacity: 0;
+  transition: 0.5s;
+}
+.sideFunc ul li a:hover b, .sideFunc ul li a:focus-visible b {
+  opacity: 1;
+  right: -2px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.sideFunc ul li a.FB {
+  background: url(../images/icon_FB.svg) 50% 50% no-repeat #3b5998;
+  background-size: 30px;
+}
+.sideFunc ul li a.Foto {
+  background: url(../images/icon_Foto.svg) 50% 50% no-repeat #2bb24c;
+  background-size: 30px;
+}
+.sideFunc ul li a.YT {
+  background: url(../images/icon_YT.svg) 50% 50% no-repeat #c4302b;
+  background-size: 30px;
+}
+.sideFunc ul li a.RSS {
+  background: url(../images/icon_RSS.svg) 50% 50% no-repeat #de5833;
+  background-size: 30px;
+}
+.sideFunc ul li a.MailTo {
+  background: url(../images/icon_email.svg) 50% 50% no-repeat rgb(27, 127, 204);
+  background-size: 30px;
+}
+.sideFunc ul.Show {
+  display: block;
+}
+.sideFunc .btn-switch {
+  width: 52px;
+  height: 52px;
+  margin-top: 14px;
+  border-radius: 50%;
+  font-size: 0;
+  position: relative;
+  display: none;
+}
+.sideFunc .btn-switch:before, .sideFunc .btn-switch:after {
+  content: "";
+  position: absolute;
+  background: #666;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+  transition: 0.3s;
+}
+.sideFunc .btn-switch:before {
+  width: 24px;
+  height: 3px;
+  border-radius: 60px;
+}
+.sideFunc .btn-switch:after {
+  width: 3px;
+  height: 24px;
+  left: 50%;
+  border-radius: 60px;
+}
+.sideFunc .btn-switch:hover:before, .sideFunc .btn-switch:hover:after, .sideFunc .btn-switch:focus-visible:before, .sideFunc .btn-switch:focus-visible:after, .sideFunc .btn-switch.act:before, .sideFunc .btn-switch.act:after {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+@media screen and (max-width: 991px) {
+  .sideFunc ul {
+    display: none;
+  }
+  .sideFunc .btn-switch {
+    display: block;
+  }
+}
+
 .innerpage > .container {
   position: relative;
   min-height: 1px;
@@ -8622,6 +8739,7 @@ a.more:hover::before, a.more:focus-visible::before, a.more:focus::before {
 .mp .main ul.resourceList li a {
   display: block;
   text-align: center;
+  padding-bottom: 1em;
   color: #222;
   transform: scale(1);
   transition: 0.3s;
@@ -8659,6 +8777,9 @@ a.more:hover::before, a.more:focus-visible::before, a.more:focus::before {
 }
 .mp .main ul.resourceList li a:hover, .mp .main ul.resourceList li a:focus-visible {
   transform: scale(1.125);
+  position: relative;
+  z-index: 1;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 @media screen and (max-width: 991px) {
   .mp .main ul.resourceList {

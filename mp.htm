@@ -167,12 +167,23 @@
         </div>
       </header>
       <!-- header End -->
+      <!-- 側邊欄功能列 -->
+      <div class="sideFunc">
+        <ul>
+          <li><a href="#" class="FB"><b>Facebook</b></a></li>
+          <li><a href="#" class="Foto"><b>經濟部相簿</b></a></li>
+          <li><a href="#" class="YT"><b>Youtube</b></a></li>
+          <li><a href="#" class="RSS"><b>真假還有人用RSS</b></a></li>
+          <li><a href="#" class="MailTo"><b>轉寄友人</b></a></li>
+        </ul>
+        <button type="button" class="btn-switch">切換開關</button>
+      </div>
       <!-- main Start -->
       <div id="center" class="main">
         <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
         <!-- 任何一個section下一層都要包下一層都要包div container作對齊 -->
         <!-- //// class 都可以隨意命名 !!! ///// -->
-        <section class="full">
+        <section class="full" data-aos="fade-up">
           <div class="container">
             <!-- 圖片輪播 -->
             <div class="mpSlider">
@@ -247,7 +258,7 @@
         <!--  兩欄樣式 -->
         <section class="flex_col_2 bg_2">
           <div class="container">
-            <div class="col" data-aos="fade-left">
+            <div class="col" data-aos="fade-right">
               <h2 class="subTitle">新聞稿</h2>
               <ul class="linkList">
                 <li class="firstNews">
@@ -274,7 +285,7 @@
                 <a href="#" class="more">更多新聞稿　</a>
               </div>
             </div>
-            <div class="col" data-aos="fade-right">
+            <div class="col" data-aos="fade-left">
               <h2 class="subTitle">業務消息</h2>
               <ul class="linkList">
                 <li class="firstNews">
@@ -346,7 +357,7 @@
         </section>
         <section class="flex_col_2">
           <div class="container">
-            <div class="col" data-aos="fade-left">
+            <div class="col" data-aos="fade-right">
               <h2 class="subTitle">影音專區</h2>
               <!-- YT影片 -->
               <div class="img-container">
@@ -356,7 +367,7 @@
                 <a href="#" class="more">更多影音專區</a>
               </div>
             </div>
-            <div class="col" data-aos="fade-right">
+            <div class="col" data-aos="fade-left">
               <h2 class="subTitle">快速連結</h2>
               <ul class="fastLink">
                 <li><a href="#">疫後特別條例升級轉型專區</a></li>
@@ -497,7 +508,7 @@
       <footer>
         <div class="container">
           <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
-          <div class="footer_logo">
+          <div class="footer_logo" data-aos="fade-right">
             <img src="images/logo2.png" alt="" class="img-responsive" />
           </div>
           <div class="footer_info">

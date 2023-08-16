@@ -41,6 +41,17 @@ $(function () {
     $('.m_search').stop(true, false).fadeOut('400', 'easeOutQuint');
   })
 
+  // sideFunc
+  $('.btn-switch').click(function(){
+    if ($(this).hasClass('act')) {
+      $(this).removeClass('act');
+      $('.sideFunc ul').removeClass('Show'); 
+    } else {
+      $(this).addClass('act');
+      $('.sideFunc ul').addClass('Show'); 
+    }
+  });
+
   // 首頁輪播
   $('.mpSlider').slick({
     centerMode: true,
