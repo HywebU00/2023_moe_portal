@@ -60,6 +60,7 @@
                   <input name="username" id="mustSameAsId" type="text" placeholder="請輸入關鍵字" accesskey="S" title="請輸入文字" aria-label="搜尋網站內容" />
                   <input name="" type="submit" value="查詢" class="btn btn-search" />
                 </div>
+                <input name="" type="submit" value="進階搜尋" class="btn_searchPlus" />
                 <div class="keywordHot">
                   <ul>
                     <li><a href="#">關鍵字一</a></li>
@@ -67,10 +68,7 @@
                     <li><a href="#">關鍵字三</a></li>
                   </ul>
                 </div>
-                <div class="btn_grp">
-                  <input name="" type="submit" value="進階搜尋" class="btn " />
-                </div>
-                <button type="button" class="btn btn_close">關閉</button>
+                <button type="button" class="btn_close">關閉</button>
               </div> 
             </div>
           </div>
@@ -182,39 +180,72 @@
       <div id="center" class="main">
         <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
         <!-- 任何一個section下一層都要包下一層都要包div container作對齊 -->
-        <!-- //// class 都可以隨意命名 !!! ///// -->
+
+        <!-- 中文 mpSlider -->
         <section class="full" data-aos="fade-up">
           <div class="container">
             <!-- 圖片輪播 -->
             <div class="mpSlider">
               <div class="col">
                 <a href="#">
-                  <div class="img-container"><img data-lazy="images/demo/01.jpg" class="cover" alt="圖片說明1" /></div>
+                  <div class="img-container"><img data-lazy="images/demo/ori_01.jpg" class="contain" alt="圖片說明1" /></div>
                   <span class="caption">圖說1</span>
                 </a>
               </div>
               <div class="col">
                 <a href="#">
-                  <div class="img-container"><img data-lazy="images/demo/02.jpg" class="cover" alt="圖片說明2" /></div>
+                  <div class="img-container"><img data-lazy="images/demo/ori_02.jpg" class="contain" alt="圖片說明2" /></div>
                   <span class="caption">圖說2</span>
                 </a>
               </div>
               <div class="col">
                 <a href="#">
-                  <div class="img-container"><img data-lazy="images/demo/03.jpg" class="cover" alt="圖片說明3" /></div>
+                  <div class="img-container"><img data-lazy="images/demo/ori_03.jpg" class="contain" alt="圖片說明3" /></div>
                   <span class="caption">圖說3</span>
                 </a>
               </div>
               <div class="col">
                 <a href="#">
-                  <div class="img-container"><img data-lazy="images/demo/04.jpg" class="cover" alt="圖片說明4" /></div>
+                  <div class="img-container"><img data-lazy="images/demo/ori_01.jpg" class="contain" alt="圖片說明4" /></div>
                   <span class="caption">圖說4</span>
+                </a>
+              </div>
+              <!-- <div class="col">
+                <a href="#">
+                  <div class="img-container"><img data-lazy="images/demo/ori_02.jpg" class="contain" alt="圖片說明5" /></div>
+                  <span class="caption">圖說5</span>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#">
+                  <div class="img-container"><img data-lazy="images/demo/ori_03.jpg" class="contain" alt="圖片說明6" /></div>
+                  <span class="caption">圖說6</span>
+                </a>
+              </div> -->
+            </div>
+          </div>
+        </section>
+        <!-- 英文 mpslider -->
+        <section class="" data-aos="fade-up">
+          <div class="container">
+            <!-- 圖片輪播 -->
+            <div class="singleSlider">
+              <div class="col">
+                <a href="#">
+                  <div class="img-container"><img data-lazy="images/demo/ori_01_EN.jpg" class="contain" alt="圖片說明1" /></div>
+                  <span class="caption">圖說1</span>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#">
+                  <div class="img-container"><img data-lazy="images/demo/ori_01_EN.jpg" class="contain" alt="圖片說明2" /></div>
+                  <span class="caption">圖說2</span>
                 </a>
               </div>
             </div>
           </div>
         </section>
-        <!--  -->
+        <!-- 輔導資源 -->
         <section class="bg_1">
           <div class="container" data-aos="fade-up">
             <h2 class="subTitle">找尋適合您的輔導資源</h2>

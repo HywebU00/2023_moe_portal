@@ -51,41 +51,44 @@ $(function () {
       $('.sideFunc ul').addClass('Show'); 
     }
   });
-
   // 首頁輪播
   $('.mpSlider').slick({
     centerMode: true,
-    centerPadding: '200px',
+    centerPadding: '300px',
     slidesToShow: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 5000,
-    arrows: false,
     speed: 1200, 
+    arrows: false,
     focusOnSelect: true,
     dots: true,
     // infinite: true,
-    responsive: [
-      // {
-      //   breakpoint: 1200,
-      //   settings: {
-      //     slidesToShow: 5,
-      //     slidesToScroll: 1,
-      //     arrows: true,
-      //   },
-      // },
-      {
+    responsive: [{
+        breakpoint: 992,
+        settings: {
+          centerPadding: '100px',
+        },
+      },{
         breakpoint: 768,
         settings: {
           centerPadding: '100px',
         },
-      },
-      {
+      },{
         breakpoint: 575,
         settings: {
-          centerPadding: '50px',
+          centerPadding: '0',
         },
       },
     ],
+  });
+  // 單圖輪播
+  $('.singleSlider').slick({
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 1200, 
+    arrows: false,
+    focusOnSelect: true,
+    dots: true,
   });
   // 廣告輪播
   $('.adSlider').slick({
