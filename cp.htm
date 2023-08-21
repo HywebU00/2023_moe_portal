@@ -276,13 +276,19 @@
             <section class="cp">
               <figure class="pic">
                 <!-- 此範例為4:3比例 -->
-                <picture>
+                <!-- <picture>
                   <source media="(min-width: 768px)" srcset="images/demo/01.jpg" />
                   <source media="(max-width: 767px)" srcset="images/demo/01.jpg" />
                   <img data-src="images/demo/01.jpg" class="lazy" alt="圖片說明" />
                   <noscript><img src="images/demo/01.jpg" alt="圖片說明" /></noscript>
                 </picture>
-                <figcaption>圖說</figcaption>
+                <figcaption>圖說</figcaption> -->
+                <a href="images/demo/01.jpg" data-fancybox="images" data-caption="左圖右文的圖片說明">
+                  <img src="images/demo/01.jpg" alt="" />
+                  <noscript><img src="images/demo/01.jpg" alt="" /></noscript>
+                  <figcaption>左圖右文的圖片說明<strong>strong字樣</strong></figcaption>
+                  <!-- <span class="caption">左圖右文的圖片說明</span> -->
+                </a>
               </figure>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dignissimos,
                 nemo, reprehenderit sunt modi rerum. Odio odit, voluptatem ab debitis, dicta
@@ -311,8 +317,7 @@
               </p>
               <h2>標題二</h2>
               <p>
-                <a href="#">連結文字樣式</a
-                >大更沒於正時節直只們來壓算有先，求化化看雨的了元得前意要，性說用。以是一分，首字地旅紀親朋經有，在沒許、兒讓靈身不；候案司通資鄉下一支情西也哥際發你也是濟言通海後的健童頭各便。大更沒於正時節直只們來壓算有先，求化化看雨的了元得前意要，性說用。以是一分，首字地旅紀親朋經有，在沒許、兒讓靈身不；候案司通資鄉下一支情西也哥際發你也是濟言通海後的健童頭各便。以是一分，首字地旅紀親朋經有，在沒許、兒讓靈身不；候案司通資鄉下一支情西也哥際發你也是濟言通海後的健童頭各便。大更沒於正時節直只們來壓算有先，求化化看雨的了元得前意要，性說用。以是一分，首字地旅紀親朋經有，在沒許、兒讓靈身不；候案司通資鄉下一支情西也哥際發你也是濟言通海後的健童頭各便。
+                <a href="#">連結文字樣式</a>大更沒於正時節直只們來壓算有先，<strong>這是strong字樣</strong> 求化化看雨的了元得前意要，性說用。以是一分，首字地旅紀親朋經有，在沒許、兒讓靈身不；候案司通資鄉下一支情西也哥際發你也是濟言通海後的健童頭各便。大更沒於正時節直只們來壓算有先，求化化看雨的了元得前意要，性說用。以是一分，首字地旅紀親朋經有，在沒許、兒讓靈身不；候案司通資鄉下一支情西也哥際發你也是濟言通海後的健童頭各便。以是一分，首字地旅紀親朋經有，在沒許、兒讓靈身不；候案司通資鄉下一支情西也哥際發你也是濟言通海後的健童頭各便。大更沒於正時節直只們來壓算有先，求化化看雨的了元得前意要，性說用。以是一分，首字地旅紀親朋經有，在沒許、兒讓靈身不；候案司通資鄉下一支情西也哥際發你也是濟言通海後的健童頭各便。
               </p>
               <h3>標題三</h3>
               <p>大更沒於正時節直只們來壓算有先，求化化看雨的了元得前意要，性說用。</p>
@@ -435,6 +440,17 @@
 									</div>
 								</div>
 							</div>
+              <!-- YT影片 -->
+              <div class="img-container">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lYpqV-LUtFM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+
+              <br>
+
+              <!-- google map -->
+              <div class="img-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28920.8994418019!2d121.49878070000003!3d25.030258300000018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a99a9e97b58f%3A0x13b2968d3d66f0a6!2z57aT5r-f6YOo5Lit5bCP5LyB5qWt6JmV!5e0!3m2!1szh-TW!2stw!4v1692613565902!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
               <div class="lightbox_slider_block">
                 <h3>燈箱照片</h3>
                 <div class="cppic_slider">
@@ -522,42 +538,6 @@
                   </li>
                 </ul>
               </div>
-              <!-- <div class="file_download">
-                            <h3>檔案下載</h3>
-                            <ul>
-                                <li>
-                                    <span class="file_name">檔案名稱</span>
-                                    <span class="file"><a href="xxxx.doc" class="file_doc">檔案名稱.doc</a>823.8 KB，下載 1,489 次</span>
-                                    <span class="file"><a href="xxxx.doc" class="file_docx">檔案名稱.doc</a>823.8 KB，下載 1,489 次</span>
-                                    <span class="file"><a href="xxxx.doc" class="file_odt">檔案名稱.doc</a>823.8 KB，下載 1,489 次</span>
-                                    <span class="file"><a href="xxxx.other" class="file_other">檔案名稱.other</a>823.8 KB，下載 1,489 次</span>
-                                </li>
-                                <li>
-                                    <span class="file_name">檔案名稱</span>
-                                    <span class="file"><a href="xxxx.xls" class="file_xls">檔案名稱.xls</a>823.8 KB，下載 1,489 次</span>
-                                    <span class="file"><a href="xxxx.xlsx" class="file_xlsx">檔案名稱.xlsx</a>823.8 KB，下載 1,489 次</span>
-                                    <span class="file"><a href="xxxx.csv" class="file_csv">檔案名稱.csv</a>823.8 KB，下載 1,489 次</span>
-                                    <span class="file"><a href="xxxx.ods" class="file_ods">檔案名稱.ods</a>823.8 KB，下載 1,489 次</span>
-                                </li>
-                                <li>
-                                    <span class="file_name">檔案名稱</span>
-                                    <span class="file"><a href="xxxx.ppt" class="file_ppt">檔案名稱.ppt</a>823.8 KB，下載 1,489 次</span>
-                                    <span class="file"><a href="xxxx.pptx" class="file_pptx">檔案名稱.pptx</a>823.8 KB，下載 1,489 次</span>
-                                    <span class="file"><a href="xxxx.odp" class="file_odp">檔案名稱.odp</a>823.8 KB，下載 1,489 次</span>
-                                </li>
-                                <li>
-                                    <span class="file_name">檔案名稱</span>
-                                    <span class="file"><a href="xxxx.pdf" class="file_pdf">檔案名稱.pdf</a>823.8 KB，下載 1,489 次</span>
-                                    <span class="file"><a href="xxxx.zip" class="file_zip">檔案名稱.zip</a>823.8 KB，下載 1,489 次</span>
-                                    <span class="file"><a href="xxxx.txt" class="file_txt">檔案名稱.txt</a>823.8 KB，下載 1,489 次</span>
-                                    <span class="file"><a href="xxxx.mov" class="file_mov">檔案名稱.mov</a>823.8 KB，下載 1,489 次</span>
-                                    <span class="file"><a href="xxxx.mp3" class="file_mp3">檔案名稱.mp3</a>823.8 KB，下載 1,489 次</span>
-                                    <span class="file"><a href="xxxx.jpg" class="file_jpg">檔案名稱.jpg</a>823.8 KB，下載 1,489 次</span>
-                                    <span class="file"><a href="xxxx.mp4" class="file_mp4">檔案名稱.mp4</a>823.8 KB，下載 1,489 次</span>
-                                    <span class="file"><a href="xxxx.wmv" class="file_wmv">檔案名稱.wmv</a>823.8 KB，下載 1,489 次</span>
-                                </li>
-                            </ul>
-                        </div> -->
             </section>
             <!-- CP End -->
           </div>

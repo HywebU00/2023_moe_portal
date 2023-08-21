@@ -273,26 +273,54 @@
             <!-- CP Start -->
             <section class="cp">
               <!-- <h3>表格樣式</h3> -->
-              <table>
-                <!-- 無障礙表格必須帶有標題 <caption> -->
-                <caption>
-                  表格標題
-                  <!-- 若表格內容複雜，可以補充摘要(summary)來加強說明表格內容，但 內容不要與標題重複 -->
-                  <span class="summary">表格摘要</span>
-                </caption>
-                <tr>
-                  <th scope="row" style="width: 200px;">th A</th>
-                  <td>td 資料</td>
-                </tr>
-                <tr>
-                  <th scope="row">th B</th>
-                  <td>td 資料</td>
-                </tr>
-                <tr>
-                  <th scope="row">th C</th>
-                  <td>td 資料 <a href="#">連結</a></td>
-                </tr>
-              </table>
+              <div class="table_list">
+                <table>
+                  <caption>表格標題<span class="summary">表格摘要</span></caption>
+                  <thead>
+                    <tr>
+                      <th>編號</th>
+                      <th>標題</th>
+                      <th>日期</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-title="編號" class="num">01</td>
+                      <td data-title="標題"><a href="#">通勤搭車看預報 環保集點10倍送</a></td>
+                      <td data-title="日期" class="date">2018/01/01</td>
+                    </tr>
+                    <tr>
+                      <td data-title="編號" class="num">02</td>
+                      <td data-title="標題"><a href="#">春節不無聊上網學習環境教育</a></td>
+                      <td data-title="日期" class="date">2018/01/01</td>
+                    </tr>
+                    <tr>
+                      <td data-title="編號" class="num">03</td>
+                      <td data-title="標題"><a href="#">洗錢防制，國家向前</a></td>
+                      <td data-title="日期" class="date">2018/01/01</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table_list">
+                <table>
+                  <caption>表格標題<span class="summary">表格摘要</span></caption>
+                  <tbody>
+                    <tr>
+                      <th>標題標題1</th>
+                      <td data-title="標題標題1">通勤搭車看預報 環保集點10倍送1</td>
+                    </tr>
+                    <tr>
+                      <th>標題標題2</th>
+                      <td data-title="標題標題2">通勤搭車看預報 環保集點10倍送2</td>
+                    </tr>
+                    <tr>
+                      <th>標題標題3</th>
+                      <td data-title="標題標題3">通勤搭車看預報 環保集點10倍送3</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
               <!-- weblink 外部連結 -->
               <div class="web_link">
                 <h3>外部連結</h3>
