@@ -6785,29 +6785,29 @@ table th {
     right: 0.3em;
   }
 }
-.lp table td a {
+table td a {
   color: #0066cc;
   text-decoration: none;
 }
-.lp table td a:hover, .lp table td a:focus {
+table td a:hover, table td a:focus {
   color: #004d99;
   cursor: pointer;
 }
-.lp table td.date {
+table td.date {
   text-align: center;
   color: #666;
 }
 @media screen and (max-width: 767px) {
-  .lp table td.date {
+  table td.date {
     text-align: left;
   }
 }
-.lp table td.num {
+table td.num {
   text-align: center;
   color: #666;
 }
 @media screen and (max-width: 767px) {
-  .lp table td.num {
+  table td.num {
     text-align: left;
   }
 }
