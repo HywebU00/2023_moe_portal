@@ -41,6 +41,24 @@ $(function () {
     $('.m_search').stop(true, false).fadeOut('400', 'easeOutQuint');
   })
 
+  // 
+  // .According 展開收合
+	$('.btn-switch').click(function(event) {
+		/* Act on the event */
+		// $(this).parents('.btn_grp').siblings('.box').addClass('act');
+		var _this = $(this).parent('').siblings('.box');
+
+		// 如果沒有.act 被點擊時，加入.act
+		// 如果有.act 被點擊時，移除.act
+		if ( _this.hasClass('act')) {
+			_this.removeClass('act');
+			$(this).val('展開內容');
+		} else {
+			_this.addClass('act');
+			$(this).val('收合內容');
+		}
+	}); 
+
   // sideFunc
   $('.btn-switch').click(function(){
     if ($(this).hasClass('act')) {

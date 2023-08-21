@@ -29,7 +29,7 @@
     <!-- 直接跳主內容區 -->
     <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
     <!-- wrapper Start -->
-    <div class="wrapper mp">
+    <div class="wrapper">
       <!-- header Start -->
       <header class="header">
         <div class="container">
@@ -177,273 +177,153 @@
         <button type="button" class="btn-switch">切換開關</button>
       </div>
       <!-- main Start -->
-      <div id="center" class="main">
+      <div id="center" class="main innerpage bg_1">
+        <!-- 內頁新增一個classname-->
         <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
-        <!-- 任何一個section下一層都要包下一層都要包div container作對齊 -->
-
-        <!-- 中文 mpSlider -->
-        <section class="full" data-aos="fade-up">
-          <div class="container">
-            <!-- 圖片輪播 -->
-            <div class="mpSlider">
-              <div class="col">
-                <a href="#">
-                  <div class="img-container"><img data-lazy="images/demo/ori_01.jpg" class="contain" alt="圖片說明1" /></div>
-                  <span class="caption">圖說1</span>
-                </a>
-              </div>
-              <div class="col">
-                <a href="#">
-                  <div class="img-container"><img data-lazy="images/demo/ori_02.jpg" class="contain" alt="圖片說明2" /></div>
-                  <span class="caption">圖說2</span>
-                </a>
-              </div>
-              <div class="col">
-                <a href="#">
-                  <div class="img-container"><img data-lazy="images/demo/ori_03.jpg" class="contain" alt="圖片說明3" /></div>
-                  <span class="caption">圖說3</span>
-                </a>
-              </div>
-              <div class="col">
-                <a href="#">
-                  <div class="img-container"><img data-lazy="images/demo/ori_01.jpg" class="contain" alt="圖片說明4" /></div>
-                  <span class="caption">圖說4</span>
-                </a>
-              </div>
-              <!-- <div class="col">
-                <a href="#">
-                  <div class="img-container"><img data-lazy="images/demo/ori_02.jpg" class="contain" alt="圖片說明5" /></div>
-                  <span class="caption">圖說5</span>
-                </a>
-              </div>
-              <div class="col">
-                <a href="#">
-                  <div class="img-container"><img data-lazy="images/demo/ori_03.jpg" class="contain" alt="圖片說明6" /></div>
-                  <span class="caption">圖說6</span>
-                </a>
-              </div> -->
+        <div class="container">
+          <!-- 主要內容區 -->
+          <div class="center_block">
+            <div class="breadcrumb">
+              <ul>
+                <li><a href="#">首頁</a></li>
+                <li><a href="#">節點</a></li>
+                <li>節點</li>
+              </ul>
             </div>
-          </div>
-        </section>
-        <!-- 英文 mpslider -->
-        <section class="" data-aos="fade-up">
-          <div class="container">
-            <!-- 圖片輪播 -->
-            <div class="singleSlider">
-              <div class="col">
-                <a href="#">
-                  <div class="img-container"><img data-lazy="images/demo/ori_01_EN.jpg" class="contain" alt="圖片說明1" /></div>
-                  <span class="caption">圖說1</span>
-                </a>
-              </div>
-              <div class="col">
-                <a href="#">
-                  <div class="img-container"><img data-lazy="images/demo/ori_01_EN.jpg" class="contain" alt="圖片說明2" /></div>
-                  <span class="caption">圖說2</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- 輔導資源 -->
-        <section class="bg_1">
-          <div class="container" data-aos="fade-up">
-            <h2 class="subTitle">找尋適合您的輔導資源</h2>
-            <!-- 篩選 -->
-            <div class="filterSearch">
-              <div class="form_grp">
-                <label for="fake-legend" class="form_title">輸入篩選項目</label>
-                <div class="form_content form_inline">
-                  <select id="selectSample" name="">
-                    <option value="">一般民眾</option>
-                    <option value="">項目一</option>
-                    <option value="">項目二</option>
-                    <option value="">項目三</option>
-                  </select>
-                  <select id="selectSample" name="">
-                    <option value="">創業輔導</option>
-                    <option value="">項目一</option>
-                    <option value="">項目二</option>
-                    <option value="">項目三</option>
-                  </select>
-                  <button type="button" class="btn btn-submit">查詢</button>
+            <!-- h2節點 -->
+            <h2 class="main_title">觀看結果 .main_title</h2>
+            <!-- function_panel -->
+            <div class="function_panel">
+              <div class="col items">
+                <!-- 文字大小 -->
+                <div class="font_size">
+                  <span>字型大小：</span>
+                  <!-- 英文用<span>font-size：</span> -->
+                  <ul>
+                    <li><a href="#" class="small">小</a></li>
+                    <li><a href="#" class="medium">中</a></li>
+                    <li><a href="#" class="large">大</a></li>
+                  </ul>
+                </div>
+                <!-- function功能區塊 -->
+                <div class="function">
+                  <ul>
+                    <li class="back"><a href="javascript:history.back()">回上一頁</a></li>
+                    <li class="print"><a href="#">友善列印</a></li>
+                    <li class="forward"><a href="#">轉寄友人</a></li>
+                  </ul>
+                </div>
+                <!-- 社群分享 -->
+                <div class="share">
+                  <ul>
+                    <li>
+                      <a href="#"><img src="images/basic/icon_facebook.svg" alt="facebook" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="images/basic/icon_twitter.svg" alt="twitter" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="images/basic/icon_line.svg" alt="line" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="images/basic/icon_youtube.svg" alt="youtube" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="images/basic/icon_googleplus.svg" alt="google plus" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="images/basic/icon_instagram.svg" alt="instagram" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="images/basic/icon_linkedin.svg" alt="LinkedIn" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="images/basic/icon_rss.svg" alt="RSS" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="images/basic/icon_plurk.svg" alt="Plurk" /></a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <!-- 資源種類 -->
-            <ul class="resourceList">
-              <li><a href="#"><div class="img-container"><img src="images/source_1.png" alt=""></div>輔導類</a></li>
-              <li><a href="#"><div class="img-container"><img src="images/source_2.png" alt=""></div>補助類</a></li>
-              <li><a href="#"><div class="img-container"><img src="images/source_3.png" alt=""></div>投資類</a></li>
-              <li><a href="#"><div class="img-container"><img src="images/source_4.png" alt=""></div>獎項類</a></li>
-              <li><a href="#"><div class="img-container"><img src="images/source_5.png" alt=""></div>融資類</a></li>
-              <li><a href="#"><div class="img-container"><img src="images/source_6.png" alt=""></div>諮詢類</a></li>
-              <li><a href="#"><div class="img-container"><img src="images/source_7.png" alt=""></div>新創與社創類</a></li>
-              <li><a href="#" class="focus">政府輔導資源手冊</a></li>
-            </ul>
-            <div class="btn_grp">
-              <a href="#" class="more">更多輔導資源</a>
-            </div>
+            <section class="">
+              <!-- <h3>請填寫下列問題</h3> -->
+              <div class="Feedback">
+								<div class="Terms">
+                  <h4 class="title">1.本處對於民意或民眾報怨之處理</h4>
+                  <div class="Proportion">
+                    <p>非常滿意</p>
+                    <div class="Value"><span></span></div>
+                  </div>
+                  <div class="Proportion">
+                    <p>滿意</p>
+                    <div class="Value"><span></span></div>
+                  </div>
+                  <div class="Proportion">
+                    <p>普通</p>
+                    <div class="Value"><span></span></div>
+                  </div>
+                  <div class="Proportion">
+                    <p>不滿意</p>
+                    <div class="Value"><span></span></div>
+                  </div>
+                  <div class="Proportion">
+                    <p>非常不滿意</p>
+                    <div class="Value"><span></span></div>
+                  </div>
+								</div>
+                <div class="Terms">
+                  <h4 class="title">2.申辦案件時效性</h4>
+                  <div class="Proportion">
+                    <p>非常滿意</p>
+                    <div class="Value"><span></span></div>
+                  </div>
+                  <div class="Proportion">
+                    <p>滿意</p>
+                    <div class="Value"><span></span></div>
+                  </div>
+                  <div class="Proportion">
+                    <p>普通</p>
+                    <div class="Value"><span></span></div>
+                  </div>
+                  <div class="Proportion">
+                    <p>不滿意</p>
+                    <div class="Value"><span></span></div>
+                  </div>
+                  <div class="Proportion">
+                    <p>非常不滿意</p>
+                    <div class="Value"><span></span></div>
+                  </div>
+								</div>
+                <div class="Terms">
+                  <h4 class="title">3.受理查詢業務答話及服務態度</h4>
+                  <div class="Proportion">
+                    <p>非常滿意</p>
+                    <div class="Value"><span></span></div>
+                  </div>
+                  <div class="Proportion">
+                    <p>滿意</p>
+                    <div class="Value"><span></span></div>
+                  </div>
+                  <div class="Proportion">
+                    <p>普通</p>
+                    <div class="Value"><span></span></div>
+                  </div>
+                  <div class="Proportion">
+                    <p>不滿意</p>
+                    <div class="Value"><span></span></div>
+                  </div>
+                  <div class="Proportion">
+                    <p>非常不滿意</p>
+                    <div class="Value"><span></span></div>
+                  </div>
+								</div>
+							</div>
+            </section>
+            <!-- End -->
           </div>
-        </section>
-        <!--  兩欄樣式 -->
-        <section class="flex_col_2 bg_2">
-          <div class="container">
-            <div class="col" data-aos="fade-right">
-              <h2 class="subTitle">新聞稿</h2>
-              <ul class="linkList">
-                <li class="firstNews">
-                  <div class="img-container"><img src="images/demo/13.jpg" alt="" class="cover"></div>
-                  <a href="#">
-                    <time>2023-06-19</time>
-                    <b>標題，單行刪節號</b>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <time>2023-06-19</time>
-                    <b>標題，單行刪節號</b>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <time>2023-06-19</time>
-                    <b>標題，單行刪節號</b>
-                  </a>
-                </li>
-              </ul>
-              <div class="btn_grp">
-                <a href="#" class="more">更多新聞稿　</a>
-              </div>
-            </div>
-            <div class="col" data-aos="fade-left">
-              <h2 class="subTitle">業務消息</h2>
-              <ul class="linkList">
-                <li class="firstNews">
-                  <a href="#">
-                    <time>2023-06-19</time>
-                    <b>標題，單行刪節號標題，單行刪節號標題，單行刪節號標題，單行刪節號</b>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora mollitia praesentium autem quod harum, quo obcaecati consequatur ad totam sint nam cupiditate repellat quidem vel dicta accusantium, ratione soluta doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora mollitia praesentium autem quod harum, quo obcaecati consequatur ad totam sint nam cupiditate repellat quidem vel dicta accusantium, ratione soluta doloremque.</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <time>2023-06-19</time>
-                    <b>標題，單行刪節號</b>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <time>2023-06-19</time>
-                    <b>標題，單行刪節號</b>
-                  </a>
-                </li>
-              </ul>
-              <div class="btn_grp">
-                <a href="#" class="more">更多業務消息</a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- 活動訊息 -->
-        <section class="bg_3">
-          <div class="container" data-aos="fade-up">
-            <h2 class="subTitle">活動訊息</h2>
-            <ul class="actList">
-              <li>
-                <a href="#">
-                  <time><b>2023</b>06/19</time>
-                  <p><b>新北市-課程</b>打造商圈邁向E化及特色化，已輔導約半打造商圈邁向E化及特色化，已輔導約半打造商圈邁向E化及特色化，已輔導約半打造商圈邁向E化及特色化，已輔導約半打造商圈邁向E化及特色化，已輔導約半打造商圈邁向E化及特色化，已輔導約半</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <time><b>2023</b>06/19</time>
-                  <p><b>新北市-課程</b>打造商圈邁向E化及特色化，已輔導約半打造商圈邁向E化及特色化，已輔導約半</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <time><b>2023</b>06/19</time>
-                  <p><b>新北市-課程</b>打造商圈邁向E化及特色化，已輔導約半打造商圈邁向E化及特色化，已輔導約半</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <time><b>2023</b>06/19</time>
-                  <p><b>新北市-課程</b>打造商圈邁向E化及特色化，已輔導約半打造商圈邁向E化及特色化，已輔導約半</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <time><b>2023</b>06/19</time>
-                  <p><b>新北市-課程</b>打造商圈邁向E化及特色化，已輔導約半打造商圈邁向E化及特色化，已輔導約半</p>
-                </a>
-              </li>
-            </ul>
-            <div class="btn_grp">
-              <a href="#" class="more">更多活動訊息</a>
-            </div>
-          </div>
-        </section>
-        <section class="flex_col_2">
-          <div class="container">
-            <div class="col" data-aos="fade-right">
-              <h2 class="subTitle">影音專區</h2>
-              <!-- YT影片 -->
-              <div class="img-container">
-                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lYpqV-LUtFM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </div>
-              <div class="btn_grp">
-                <a href="#" class="more">更多影音專區</a>
-              </div>
-            </div>
-            <div class="col" data-aos="fade-left">
-              <h2 class="subTitle">快速連結</h2>
-              <ul class="fastLink">
-                <li><a href="#">疫後特別條例升級轉型專區</a></li>
-                <li><a href="#" class="R">提供紅字</a></li>
-                <li><a href="#">中小企業創新發展貸款專區</a></li>
-                <li><a href="#" class="B">提供藍字</a></li>
-                <li><a href="#">青年創業及啟動金貸款專區</a></li>
-                <li><a href="#" class="G">提供綠字</a></li>
-                <li><a href="#">企業海外智慧財產權訴訟貸款</a></li>
-                <li><a href="#">女性創業服務專區</a></li>
-                <li><a href="#">受災中小企業融資專區</a></li>
-                <li><a href="#">創業貸款課程專區</a></li>
-                <li><a href="#">FINDIT早期資金觀測站</a></li>
-                <li><a href="#">全球早期資金趨勢觀測月報</a></li>
-              </ul>
-              <div class="btn_grp">
-                <a href="#" class="more">更多快速連結</a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- banner -->
-        <section>
-          <div class="container">
-            <!-- 廣告輪播 -->
-            <div class="adSlider" data-aos="fade-up">
-              <div class="col">
-                <a href="#"><div class="img-container"><img data-lazy="images/demo/ad_01.jpg" class="contain" alt="圖片說明1" /></div></a>
-                <a href="#"><div class="img-container"><img data-lazy="images/demo/ad_01.jpg" class="contain" alt="圖片說明2" /></div></a>
-                <a href="#"><div class="img-container"><img data-lazy="images/demo/ad_01.jpg" class="contain" alt="圖片說明3" /></div></a>
-                <a href="#"><div class="img-container"><img data-lazy="images/demo/ad_01.jpg" class="contain" alt="圖片說明4" /></div></a>
-                <a href="#"><div class="img-container"><img data-lazy="images/demo/ad_01.jpg" class="contain" alt="圖片說明5" /></div></a>
-                <a href="#"><div class="img-container"><img data-lazy="images/demo/ad_01.jpg" class="contain" alt="圖片說明6" /></div></a>
-                <a href="#"><div class="img-container"><img data-lazy="images/demo/ad_01.jpg" class="contain" alt="圖片說明7" /></div></a>
-                <a href="#"><div class="img-container"><img data-lazy="images/demo/ad_01.jpg" class="contain" alt="圖片說明8" /></div></a>
-                <a href="#"><div class="img-container"><img data-lazy="images/demo/ad_01.jpg" class="contain" alt="圖片說明9" /></div></a>
-                <a href="#"><div class="img-container"><img data-lazy="images/demo/ad_01.jpg" class="contain" alt="圖片說明10" /></div></a>
-              </div>
-              <div class="col">
-                <a href="#"><div class="img-container"><img data-lazy="images/demo/ad_01.jpg" class="contain" alt="圖片說明11" /></div></a>
-                <a href="#"><div class="img-container"><img data-lazy="images/demo/ad_01.jpg" class="contain" alt="圖片說明12" /></div></a>
-              </div>
-            </div>
-          </div>
-        </section>
+        </div>
       </div>
       <!-- fatfooter -->
       <section class="fatfooter">

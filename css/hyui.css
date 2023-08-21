@@ -952,7 +952,6 @@ th {
 }
 
 .cp {
-  font-size: 1.0666666em;
   line-height: 1.65em;
 }
 @media screen and (max-width: 575px) {
@@ -2835,7 +2834,7 @@ div.tag ul li a {
   text-decoration: none;
   border-radius: 4px;
   border: 1px solid #bebebe;
-  padding: 0.45em 1em;
+  padding: 0.25em 1em;
 }
 div.tag ul li a:hover, div.tag ul li a:focus {
   color: #004d99;
@@ -4893,8 +4892,8 @@ select::-ms-expand {
   padding-right: 2em;
 }
 .flex-form .form_grp .form_title {
-  color: #004d99;
-  font-weight: 500;
+  color: #333;
+  font-weight: 700;
 }
 .flex-form .form_title {
   max-width: 150px;
@@ -6543,12 +6542,14 @@ table caption .summary {
   font-size: 1em;
   font-weight: normal;
 }
-table th,
-table td {
+table tr:nth-child(2n+1) {
+  background: #F5F5F5;
+}
+table th, table td {
   padding: 0.5em;
-  text-align: left;
 }
 table td {
+  text-align: left;
   border: #ddd 1px solid;
   word-break: break-all;
 }
@@ -6561,12 +6562,6 @@ table th {
   border: #DDD 1px solid;
   text-align: center;
   white-space: nowrap;
-}
-table.table_hover tr:hover {
-  background: #F3F3F3;
-}
-table.table_sprite tr:nth-child(even) {
-  background: #F5F5F5;
 }
 
 @media screen and (max-width: 575px) {
@@ -6816,50 +6811,51 @@ table.table_sprite tr:nth-child(even) {
     text-align: left;
   }
 }
-.lp .list > ul, .lp .list ol {
+
+.list > ul, .list ol {
   list-style-type: none;
   padding: 0;
-  border-top: 2px solid #0066cc;
+  border-top: 2px solid #666;
 }
-.lp .list > ul > li, .lp .list ol > li {
+.list > ul > li, .list ol > li {
   padding: 1em 0;
   border-bottom: 1px solid #DDD;
   position: relative;
 }
-.lp .list > ul > li .tag, .lp .list ol > li .tag {
+.list > ul > li .tag, .list ol > li .tag {
   margin-left: 2em;
 }
-.lp .list > ul > li > a, .lp .list ol > li > a {
+.list > ul > li > a, .list ol > li > a {
   display: block;
   padding-left: 2em;
   position: relative;
   line-height: 1.45em;
   color: #222;
 }
-.lp .list > ul > li > a:hover, .lp .list ol > li > a:hover {
+.list > ul > li > a:hover, .list ol > li > a:hover {
   color: #004d99;
 }
-.lp .list > ul > li > a .num, .lp .list ol > li > a .num {
+.list > ul > li > a .num, .list ol > li > a .num {
   width: 1.5em;
   text-align: right;
   position: absolute;
   top: 0;
   left: 0;
 }
-.lp .list > ul > li > a .num:after, .lp .list ol > li > a .num:after {
+.list > ul > li > a .num:after, .list ol > li > a .num:after {
   content: ".";
   display: inline-block;
 }
-.lp .list > ul > li span.dept, .lp .list ol > li span.dept {
+.list > ul > li span.dept, .list ol > li span.dept {
   display: inline-block;
   font-size: 0.938em;
 }
 @media screen and (max-width: 767px) {
-  .lp .list > ul > li span.dept, .lp .list ol > li span.dept {
+  .list > ul > li span.dept, .list ol > li span.dept {
     display: block;
   }
 }
-.lp .list > ul > li time, .lp .list ol > li time {
+.list > ul > li time, .list ol > li time {
   display: block;
   color: #AAA;
   font-size: 0.938em;
@@ -8640,6 +8636,130 @@ body.noscroll {
   padding: 0;
 }
 
+dl dt, dl dd {
+  padding: 0.5em 0;
+}
+dl dt {
+  float: left;
+  width: 160px;
+  font-weight: bold;
+  text-align: right;
+  position: relative;
+}
+dl dt:before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 18px;
+  background: #222;
+  right: -15px;
+  top: 14px;
+  transform: rotate(30deg);
+}
+dl dd {
+  margin-left: 190px;
+}
+@media screen and (max-width: 767px) {
+  dl dt {
+    float: none;
+    text-align: left;
+  }
+  dl dt:before {
+    transform: rotate(0);
+    width: 100%;
+    height: 1px;
+    left: 0;
+    top: 90%;
+  }
+  dl dd {
+    margin-left: 0;
+  }
+}
+
+.Terms {
+  background: #f5f5f5;
+  border-radius: 5px;
+  padding: 1em 2em;
+  margin: 1em 0;
+}
+.Terms b {
+  line-height: 1.25em;
+  margin-bottom: 1em;
+  font-size: 112.5%;
+  margin-bottom: 0.5em;
+  color: #2b7b00;
+}
+.Terms .Btns {
+  text-align: center;
+  margin-top: 15px;
+}
+.Terms .Btns i {
+  margin-left: 8px;
+  font-size: 1.2em;
+}
+.Terms .form_grp {
+  border-bottom: none;
+  display: block;
+}
+.Terms .form_grp .form_title {
+  padding: 0;
+}
+.Terms textarea {
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 4px;
+}
+
+.Proportion {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0.5em 0;
+}
+.Proportion p {
+  flex: 0 0 120px;
+  margin: 0;
+  padding-right: 1em;
+  text-align: right;
+}
+.Proportion .Value {
+  flex: 1 1 calc(100% - 120px);
+  height: 15px;
+  background: #fff;
+  border: solid 1px #d5d5d5;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 5px 0;
+}
+.Proportion .Value span {
+  display: block;
+  background: #a0a0a0;
+  height: 100%;
+  width: 50%;
+}
+
+.According .box {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+.According .box:after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(253, 253, 254) 100%);
+  width: 100%;
+  height: 60px;
+  bottom: 0;
+}
+.According .links {
+  height: 480px;
+}
+.According .act {
+  height: 100%;
+}
+.According .act:after {
+  display: none;
+}
+
 .wrapper {
   width: 100%;
   margin: 0px auto;
@@ -9169,13 +9289,25 @@ a.more:hover::before, a.more:focus-visible::before, a.more:focus::before {
   padding-left: 0.75em;
 }
 
-h1.title,
-h2.title {
+.main_title,
+.sub_title,
+.title {
   line-height: 1.25em;
-  margin-bottom: 1em;
-  font-size: 175%;
   margin-bottom: 0.5em;
   color: #2b7b00;
+  font-weight: 700;
+}
+
+.main_title {
+  font-size: 175%;
+}
+
+.sub_title {
+  font-size: 150%;
+}
+
+.title {
+  font-size: 125%;
 }
 
 .cp .pic {
@@ -9249,6 +9381,14 @@ h2.title {
 .cp h2, .cp h3, .cp h4, .cp h5 {
   color: #2b7b00;
 }
+.cp.dl_style > h3 {
+  padding-left: 86px;
+}
+@media screen and (max-width: 767px) {
+  .cp.dl_style > h3 {
+    padding-left: 0;
+  }
+}
 
 .file_download {
   width: 100%;
@@ -9265,9 +9405,7 @@ h2.title {
 }
 .file_download h3 {
   font-size: 1.5em;
-  padding: 12px 0px 15px 0px;
-  margin: 0.5em 0px 0.2em;
-  border-bottom: 1px solid #0066cc;
+  margin: 1em 0 0.5em;
 }
 .file_download ul {
   list-style-type: none;
@@ -9547,9 +9685,7 @@ h2.title {
 }
 .web_link h3 {
   font-size: 1.5em;
-  padding: 12px 0px 15px 0px;
-  margin: 0.5em 0px 0.2em;
-  border-bottom: 1px solid #0066cc;
+  margin: 1em 0 0.5em;
 }
 .web_link ol,
 .web_link ul {
@@ -9583,6 +9719,12 @@ h2.title {
 .web_link li a:hover, .web_link li a:focus {
   color: #004d99;
   cursor: pointer;
+}
+
+.file_download ul, .file_download ol,
+.web_link ul,
+.web_link ol {
+  border-top: 2px solid #666;
 }
 
 .publish_info {
