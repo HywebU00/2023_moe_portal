@@ -4297,6 +4297,7 @@ footer:after {
 footer .container {
   padding: 3em 15px;
   display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 991px) {
   footer .container {
