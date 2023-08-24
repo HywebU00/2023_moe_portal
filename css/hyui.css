@@ -2871,6 +2871,9 @@ div.tag ul li a:hover, div.tag ul li a:focus, div.tag ul li a.act {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
   transition: 0.3s ease-out;
 }
+.header .accesskey {
+  top: -10px;
+}
 @media screen and (max-width: 991px) {
   .header {
     position: fixed;
@@ -3003,8 +3006,8 @@ div.tag ul li a:hover, div.tag ul li a:focus, div.tag ul li a.act {
 }
 .header h1 {
   float: left;
-  width: 300px;
-  height: 75px;
+  width: 360px;
+  height: 90px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -3017,8 +3020,8 @@ div.tag ul li a:hover, div.tag ul li a:focus, div.tag ul li a.act {
 }
 .header h1 img {
   display: block;
-  max-width: 300px;
-  max-height: 75px;
+  max-width: 360px;
+  max-height: 90px;
 }
 @media screen and (max-width: 991px) {
   .header h1 {
@@ -9304,7 +9307,7 @@ a.more:hover::before, a.more:focus-visible::before, a.more:focus::before {
   flex: 1 1 100%;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 11;
   overflow: hidden;
 }
 .mp .main ul.linkList li.firstNews .img-container {
