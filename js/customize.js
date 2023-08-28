@@ -11,7 +11,7 @@ $(function () {
     });
   }
 
-  // 政府輔導資源手冊 按鈕高度，是吃左方icon的高度
+  // 1)政府輔導資源手冊 按鈕高度，是吃左方icon的高度
   $(document).ready(function() {
     // 初始化
     updateFocusHeight();
@@ -22,23 +22,29 @@ $(function () {
     function updateFocusHeight() {
       var imgContainerHeight = $('.resourceList .img-container').height();
       $('a.focus').css('height', imgContainerHeight + 'px');
-    }
+    };
   });
 
   // btn_close clicked， .m_search add display:none;
   $('.searchCtrl_desk').click(function(){
-    $('.search .searchItem').addClass('show');
-    $('.search .searchItem').stop(true, false).fadeIn('400', 'easeOutQuint');
+    $('.search').addClass('show');
+    // $('.search').stop(true, false).fadeIn('400', 'easeOutQuint');
+    // 用 fadeIn、out，背景 blur 會有時間差
   })
-  $('.searchCtrl').click(function(){
-    $('.m_search').stop(true, false).fadeIn('400', 'easeOutQuint');
-  })
-  
   $('.search .btn_close').click(function(){
-    $('.search .searchItem').stop(true, false).fadeOut('400', 'easeOutQuint');
+    $('.search').removeClass('show');
+    // $('.search').stop(true, false).fadeOut('400', 'easeOutQuint');
+    // 用 fadeIn、out，背景 blur 會有時間差
   })
-  $('.m_search .btn_close').click(function(){
-    $('.m_search').stop(true, false).fadeOut('400', 'easeOutQuint');
+  // .searchCtrl_desk focus 時， .search add .show
+  // if ($('.searchCtrl_desk').focus) {
+  //   $('.search').addClass('show')
+  // }
+  $('.searchCtrl_desk').keyup(function(){
+    $('.search').addClass('show');
+  });
+  $('.btn_close').keyup(function(){
+    $('.search').removeClass('show');
   })
 
   // 
