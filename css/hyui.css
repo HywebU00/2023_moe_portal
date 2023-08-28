@@ -1731,7 +1731,7 @@ kbd kbd {
 .btn_close:hover:after, .btn_close:focus-visible:after {
   transform: rotate(45deg);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .btn_close:before {
     transform: rotate(-45deg);
   }
@@ -3093,7 +3093,7 @@ div.tag ul li a:hover, div.tag ul li a:focus, div.tag ul li a.act {
   height: 100vh;
   top: -100%;
   left: 0;
-  z-index: 100;
+  z-index: 1000;
   background: rgba(0, 0, 0, 0.6);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -3190,7 +3190,7 @@ div.tag ul li a:hover, div.tag ul li a:focus, div.tag ul li a.act {
   right: 2em;
   top: -70%;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .search .searchItem .inner .btn_searchPlus {
     position: static;
     margin: 4px 0;

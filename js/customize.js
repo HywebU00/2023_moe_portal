@@ -28,11 +28,13 @@ $(function () {
   // btn_close clicked， .m_search add display:none;
   $('.searchCtrl_desk').click(function(){
     $('.search').addClass('show');
+    $('body').addClass('noscroll');
     // $('.search').stop(true, false).fadeIn('400', 'easeOutQuint');
     // 用 fadeIn、out，背景 blur 會有時間差
   })
   $('.search .btn_close').click(function(){
     $('.search').removeClass('show');
+    $('body').removeClass('noscroll');
     // $('.search').stop(true, false).fadeOut('400', 'easeOutQuint');
     // 用 fadeIn、out，背景 blur 會有時間差
   })
