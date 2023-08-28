@@ -159,6 +159,60 @@ img {
   }
 }
 
+.flex_col_3 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.flex_col_3 .col {
+  flex: 0 1 auto;
+  width: calc(33.333% - 16px);
+}
+.flex_col_3 .col:nth-child(2) {
+  animation-delay: 300ms;
+}
+.flex_col_3 .col:nth-child(3) {
+  animation-delay: 600ms;
+}
+@media screen and (max-width: 991px) {
+  .flex_col_3 {
+    flex-wrap: wrap;
+  }
+  .flex_col_3 .col {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+}
+
+.flex_col_84 .container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.flex_col_84 .container .col {
+  flex: 0 1 auto;
+}
+.flex_col_84 .container .col:nth-child(1) {
+  width: calc(60% - 30px);
+}
+.flex_col_84 .container .col:nth-child(1) .img-container.YT {
+  height: auto;
+}
+.flex_col_84 .container .col:nth-child(2) {
+  width: calc(40% - 30px);
+}
+@media screen and (max-width: 991px) {
+  .flex_col_84 .container {
+    flex-wrap: wrap;
+  }
+  .flex_col_84 .container .col {
+    flex: 1 1 auto;
+  }
+  .flex_col_84 .container .col:nth-child(1), .flex_col_84 .container .col:nth-child(2) {
+    width: 100%;
+  }
+}
+
 .Flex-set .col {
   background: #485b8a;
   color: #fff;
@@ -4408,17 +4462,19 @@ footer .footer_icon img {
   overflow: hidden;
   display: block;
   position: relative;
-  padding: 5em 1em;
+  padding: 5em 0;
   box-sizing: border-box;
 }
 .fatfooter nav ul {
   display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 .fatfooter nav ul li {
-  flex: 1 1 16%;
+  flex: 0 1 auto;
+  flex-basis: calc(16.6666666667% - 8px);
   box-sizing: border-box;
 }
 .fatfooter nav ul li a {
@@ -6971,6 +7027,7 @@ table td.num {
   display: block;
   padding: 1em;
   border-radius: 6px;
+  color: #555;
   position: relative;
 }
 .thumbnail a:hover:before, .thumbnail a:focus-visible:before {
@@ -8611,6 +8668,93 @@ dl dd {
 
 strong {
   color: #004d99;
+}
+
+#EN a.more {
+  width: 340px;
+}
+#EN ul.resourceList {
+  margin-top: 3em;
+}
+#EN ul.resourceList li {
+  flex: 0 1 auto;
+  width: calc(14.2857142857% - 8px);
+}
+@media screen and (max-width: 991px) {
+  #EN ul.resourceList li {
+    width: calc(25% - 8px);
+  }
+  #EN ul.resourceList li:nth-child(5), #EN ul.resourceList li:nth-child(6), #EN ul.resourceList li:nth-child(7) {
+    width: calc(33.3333333333% - 8px);
+  }
+  #EN ul.resourceList li:nth-child(5) .img-container, #EN ul.resourceList li:nth-child(6) .img-container, #EN ul.resourceList li:nth-child(7) .img-container {
+    overflow: hidden;
+  }
+  #EN ul.resourceList li:nth-child(5) .img-container:before, #EN ul.resourceList li:nth-child(6) .img-container:before, #EN ul.resourceList li:nth-child(7) .img-container:before {
+    display: inline-block;
+    content: "";
+    padding-top: 66.6666666667%;
+  }
+  #EN ul.resourceList li:nth-child(5) .img-container img, #EN ul.resourceList li:nth-child(6) .img-container img, #EN ul.resourceList li:nth-child(7) .img-container img {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  #EN ul.resourceList li {
+    width: calc(50% - 8px) !important;
+  }
+  #EN ul.resourceList li .img-container {
+    overflow: hidden;
+  }
+  #EN ul.resourceList li .img-container:before {
+    display: inline-block;
+    content: "";
+    padding-top: 100%;
+  }
+  #EN ul.resourceList li .img-container img {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+  #EN ul.resourceList li:last-child {
+    width: 100% !important;
+  }
+  #EN ul.resourceList li:last-child .img-container {
+    overflow: hidden;
+  }
+  #EN ul.resourceList li:last-child .img-container:before {
+    display: inline-block;
+    content: "";
+    padding-top: 33.3333333333%;
+  }
+  #EN ul.resourceList li:last-child .img-container img {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+}
+#EN ul.linkList {
+  min-height: auto;
 }
 
 .Terms {

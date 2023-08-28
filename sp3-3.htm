@@ -19,7 +19,7 @@
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="vendor/fancybox/jquery.fancybox.min.css" /><!-- 燈箱facybox -->
-    <link rel="stylesheet" href="css/aos.css" /><!-- 動態 -->
+    <link rel="stylesheet" href="vendor/wow/animate.css" /><!-- 動態 -->
     <link rel="stylesheet" href="css/hyui.css" /><!-- hyui -->
     <!-- favicon -->
     <link href="images/favicon.png" rel="icon" type="image/x-icon" />
@@ -166,8 +166,7 @@
       </header>
       <!-- header End -->
       <!-- 側邊欄功能列 -->
-      <div class="sideFunc" data-aos="fade-left">
-        <ul>
+            <ul>
           <li><a href="#" class="FB"><b>Facebook</b></a></li>
           <li><a href="#" class="Foto"><b>經濟部相簿</b></a></li>
           <li><a href="#" class="YT"><b>Youtube</b></a></li>
@@ -417,9 +416,9 @@
       </section>
       <!-- footer-->
       <footer>
-        <div class="container" data-aos="fade-up">
+        <div class="container">
           <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
-          <div class="footer_logo">
+          <div class="footer_logo wow fadeInUp">
             <img src="images/logo2.png" alt="" class="img-responsive" />
           </div>
           <div class="footer_info">
@@ -469,17 +468,14 @@
     <script src="vendor/sticky-sidebar/ResizeSensor.js"></script>
     <!-- fancy -->
     <script src="vendor/fancybox/jquery.fancybox.min.js"></script>
-    <!-- aos -->
-    <script src="vendor/aos.js"></script>
+    <!-- wow -->
+    <script src="vendor/wow/wow.min.js"></script>
     <!-- hyUI -->
     <script src="js/hyui.js"></script>
     <!-- 客製js -->
     <script src="js/customize.js"></script>
     <script>
-      AOS.init();
-      window.addEventListener('scroll', function() {
-        AOS.refresh();
-      });
+      new WOW().init();
     </script>
   </body>
 </html>
