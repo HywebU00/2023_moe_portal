@@ -2961,7 +2961,7 @@ div.tag ul li a:hover, div.tag ul li a:focus, div.tag ul li a.act {
 .header > .container .searchCtrl_desk {
   background: #222;
   border-radius: 50%;
-  right: 0px;
+  right: 16px;
   font-size: 0em;
 }
 .header > .container .searchCtrl:before,
@@ -2990,6 +2990,7 @@ div.tag ul li a:hover, div.tag ul li a:focus, div.tag ul li a.act {
 @media screen and (max-width: 991px) {
   .header > .container .searchCtrl,
   .header > .container .searchCtrl_desk {
+    right: 0;
     background: #fff;
   }
   .header > .container .searchCtrl:before,
