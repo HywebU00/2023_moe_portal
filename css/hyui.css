@@ -9371,6 +9371,19 @@ a.more:hover::before, a.more:focus-visible::before, a.more:focus::before {
   flex-wrap: wrap;
   padding: 0.35em 0;
   color: #222;
+  background: transparent;
+  transition: 0.3s;
+  position: relative;
+}
+.mp .main ul.linkList li a:before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  width: 0;
+  height: 1px;
+  background: #333;
+  padding-left: 0;
+  transition: 0.3s;
 }
 .mp .main ul.linkList li a time {
   flex: 0 0 110px;
@@ -9379,12 +9392,14 @@ a.more:hover::before, a.more:focus-visible::before, a.more:focus::before {
   font-weight: bold;
 }
 .mp .main ul.linkList li a b {
+  padding-left: 0;
   flex: 1 1 auto;
   width: calc(100% - 110px);
   font-weight: normal;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  transition: 0.3s;
 }
 .mp .main ul.linkList li a p {
   flex: 1 1 100%;
@@ -9392,6 +9407,15 @@ a.more:hover::before, a.more:focus-visible::before, a.more:focus::before {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 11;
   overflow: hidden;
+}
+.mp .main ul.linkList li a:hover time {
+  color: #222;
+}
+.mp .main ul.linkList li a:hover b {
+  padding-left: 0.5em;
+}
+.mp .main ul.linkList li a:hover:before {
+  width: 100%;
 }
 .mp .main ul.linkList li.firstNews .img-container {
   max-height: 320px;
