@@ -9275,6 +9275,14 @@ a.more:hover::before, a.more:focus-visible::before, a.more:focus::before {
   width: 72px !important;
   height: 72px !important;
 }
+.mp .main ul.resourceList li a:hover, .mp .main ul.resourceList li a:focus-visible {
+  transform: scale(1.125);
+  background: #fff;
+  padding: 0.65em;
+  position: relative;
+  z-index: 1;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
 .mp .main ul.resourceList li a.focus {
   display: flex;
   align-items: center;
@@ -9282,11 +9290,9 @@ a.more:hover::before, a.more:focus-visible::before, a.more:focus::before {
   background: #f9bd35;
   padding: 1.5em;
 }
-.mp .main ul.resourceList li a:hover, .mp .main ul.resourceList li a:focus-visible {
-  transform: scale(1.125);
-  position: relative;
-  z-index: 1;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+.mp .main ul.resourceList li a.focus:hover, .mp .main ul.resourceList li a.focus:focus-visible {
+  background: #f9bd35;
+  padding: 1.5em;
 }
 @media screen and (max-width: 991px) {
   .mp .main ul.resourceList {
