@@ -3321,10 +3321,11 @@ div.tag ul li a:hover, div.tag ul li a:focus, div.tag ul li a.act {
   padding: 0;
   list-style-type: none;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .menu > ul > li {
-  flex: 0 1 16%;
+  flex: 1 1 auto;
+  flex-basis: 16.6666666667%;
 }
 .menu > ul > li > a {
   display: block;
@@ -3355,6 +3356,14 @@ div.tag ul li a:hover, div.tag ul li a:focus, div.tag ul li a.act {
   border: 2px solid #004d99;
   border-bottom: none;
   border-left: none;
+}
+@media screen and (max-width: 991px) {
+  .menu > ul {
+    flex-wrap: wrap;
+  }
+  .menu > ul > li {
+    flex-basis: 100%;
+  }
 }
 .menu ul li {
   position: relative;
