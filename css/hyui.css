@@ -174,13 +174,14 @@ img {
 .flex_col_3 .col:nth-child(3) {
   animation-delay: 600ms;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   .flex_col_3 {
     flex-wrap: wrap;
   }
   .flex_col_3 .col {
     flex: 1 1 auto;
     width: 100%;
+    margin-bottom: 2em;
   }
 }
 
@@ -4471,7 +4472,7 @@ footer .footer_icon img {
   overflow: hidden;
   display: block;
   position: relative;
-  padding: 5em 0;
+  padding: 5em 10px;
   box-sizing: border-box;
 }
 .fatfooter nav ul {
@@ -7030,14 +7031,15 @@ table td.num {
   transition: all 0.3s ease;
 }
 .thumbnail:hover {
+  border-radius: 0;
   box-shadow: 0 12px 3em -1em rgba(0, 0, 0, 0.5);
 }
 .thumbnail a {
   display: block;
   padding: 1em;
-  border-radius: 6px;
   color: #555;
   position: relative;
+  transition: 0.3s;
 }
 .thumbnail a:hover:before, .thumbnail a:focus-visible:before {
   content: "";
@@ -7049,7 +7051,7 @@ table td.num {
   right: 0;
   bottom: 0;
   z-index: 1;
-  box-shadow: 0px 0px 0px 1px #004d99 inset;
+  box-shadow: 0px 0px 0px 2px #004d99 inset;
 }
 .thumbnail .img-container {
   overflow: hidden;
@@ -7485,7 +7487,7 @@ table td.num {
 .singleSlider .img-container:before {
   display: inline-block;
   content: "";
-  padding-top: 28.5714285714%;
+  padding-top: 50%;
 }
 .singleSlider .img-container img {
   display: block;
@@ -8679,6 +8681,12 @@ strong {
   color: #004d99;
 }
 
+#EN .header h1 {
+  width: 420px;
+}
+#EN .header h1 img {
+  max-width: 420px;
+}
 #EN a.more {
   width: 340px;
 }
@@ -8764,6 +8772,21 @@ strong {
 }
 #EN ul.linkList {
   min-height: auto;
+}
+#EN .thumbnail .caption p {
+  -webkit-line-clamp: 3;
+}
+
+a.link {
+  color: #555;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  transition: 0.3s;
+}
+a.link:hover, a.link:focus {
+  color: #222;
 }
 
 .Terms {

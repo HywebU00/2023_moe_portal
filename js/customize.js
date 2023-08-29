@@ -21,11 +21,11 @@ $(function () {
     });
     function updateFocusHeight() {
       var imgContainerHeight = $('.resourceList .img-container').height();
-      var imgContainerHeight2 = $('.flex_col_84 .thumbnail').height();
+      // var imgContainerHeight2 = $('.flex_col_84 .thumbnail').height();
 
       $('a.focus').css('height', imgContainerHeight + 'px');
       // alert(imgContainerHeight2+'px')
-      $('#EN .img-container.YT').css('height', imgContainerHeight2 + 'px');
+      // $('#EN .img-container.YT').css('height', imgContainerHeight2 + 'px');
     };
   });
 
