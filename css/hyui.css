@@ -7031,7 +7031,6 @@ table td.num {
   transition: all 0.3s ease;
 }
 .thumbnail:hover {
-  border-radius: 0;
   box-shadow: 0 12px 3em -1em rgba(0, 0, 0, 0.5);
 }
 .thumbnail a {
@@ -7051,7 +7050,9 @@ table td.num {
   right: 0;
   bottom: 0;
   z-index: 1;
-  box-shadow: 0px 0px 0px 2px #004d99 inset;
+}
+.thumbnail a:focus:before, .thumbnail a:focus-visible:before {
+  box-shadow: 0px 0px 0px 1px #004d99 inset;
 }
 .thumbnail .img-container {
   overflow: hidden;
@@ -8774,6 +8775,9 @@ strong {
   min-height: auto;
 }
 #EN .thumbnail .caption p {
+  -webkit-line-clamp: 13;
+}
+#EN .thumbnail .img-container + .caption p {
   -webkit-line-clamp: 3;
 }
 
