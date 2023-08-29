@@ -3095,7 +3095,7 @@ div.tag ul li a:hover, div.tag ul li a:focus, div.tag ul li a.act {
     height: 60px;
   }
   .header h1 img {
-    width: 240px;
+    width: 100%;
     height: auto;
     max-height: 54px;
     margin: 0px auto;
@@ -8683,13 +8683,21 @@ strong {
 }
 
 #EN .header h1 {
-  width: 420px;
+  width: 520px;
 }
 #EN .header h1 img {
-  max-width: 420px;
+  max-width: 520px;
+}
+@media screen and (max-width: 991px) {
+  #EN .header h1 {
+    width: 100%;
+  }
 }
 #EN a.more {
   width: 340px;
+}
+#EN .bg_1 {
+  padding: 4.5em 0;
 }
 #EN ul.resourceList {
   margin-top: 3em;
