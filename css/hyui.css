@@ -9119,7 +9119,7 @@ a.link:hover, a.link:focus {
     right: 1em;
   }
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1410px) {
   .sideFunc ul {
     display: none;
   }
