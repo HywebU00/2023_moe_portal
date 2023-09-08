@@ -8834,6 +8834,7 @@ strong {
 
 a.link {
   color: #555;
+  line-height: 1.6;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -9297,7 +9298,7 @@ a.more:hover::before, a.more:focus-visible::before, a.more:focus::before {
 }
 .mp .main .flex_col_2 .col {
   position: relative;
-  padding-bottom: 120px;
+  padding-bottom: 156px;
 }
 .mp .main .flex_col_2 .col .btn_grp {
   position: absolute;
