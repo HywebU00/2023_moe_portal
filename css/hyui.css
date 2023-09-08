@@ -2923,7 +2923,7 @@ div.tag ul li a:hover, div.tag ul li a:focus, div.tag ul li a.act {
   text-decoration: none;
   position: fixed;
   bottom: 1em;
-  right: 1em;
+  right: calc((100% - 1200px) / 2 - 90px);
   transition: 0.3s ease-out;
   display: none;
   z-index: 99999999;
@@ -2932,6 +2932,11 @@ div.tag ul li a:hover, div.tag ul li a:focus, div.tag ul li a.act {
 .scrollToTop:hover, .scrollToTop:focus {
   background: url(../images/basic/top.png) 50% 50% no-repeat rgba(0, 0, 0, 0.8);
   box-shadow: none;
+}
+@media screen and (max-width: 1410px) {
+  .scrollToTop {
+    right: 1em;
+  }
 }
 
 .header {
@@ -7289,15 +7294,18 @@ table td.num {
   top: 50%;
   transform: translateY(-50%);
   display: block;
-  width: 40px !important;
-  height: 60px !important;
+  width: 80px !important;
+  height: 80px !important;
+  border-radius: 50%;
   padding: 0 !important;
   min-width: auto;
   z-index: 2;
   cursor: pointer;
   border: none;
   outline: none;
-  box-shadow: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   transition: 0.3s ease-out;
 }
 .slick-prev:hover, .slick-prev:focus,
@@ -7307,27 +7315,44 @@ table td.num {
   outline: none;
   box-shadow: 0px 0px 0px 2px #ff3e4d inset;
 }
+@media screen and (max-width: 991px) {
+  .slick-prev,
+  .slick-next {
+    width: 60px !important;
+    height: 60px !important;
+  }
+}
 
 .slick-prev {
-  left: 25px;
+  left: 12%;
   background: url("../images/slick/icon_arrow_left_inverse.png") center center no-repeat RGBA(255, 255, 255, 0.5);
-  background-size: 30px 30px;
+  background-size: 22px 22px;
   /* 箭頭 hover及focus 樣式 */
 }
 .slick-prev:hover, .slick-prev:focus {
-  background: url("../images/slick/icon_arrow_left_inverse.png") center center no-repeat RGBA(255, 255, 255, 0.8);
-  background-size: 30px 30px;
+  background: url("../images/slick/icon_arrow_left_inverse.png") center center no-repeat #f9bd35;
+  background-size: 22px 22px;
+}
+@media screen and (max-width: 991px) {
+  .slick-prev {
+    left: 8%;
+  }
 }
 
 .slick-next {
-  right: 25px;
+  right: 12%;
   background: url("../images/slick/icon_arrow_right_inverse.png") center center no-repeat RGBA(255, 255, 255, 0.5);
-  background-size: 30px 30px;
+  background-size: 22px 22px;
   /* 箭頭 hover及focus 樣式 */
 }
 .slick-next:hover, .slick-next:focus {
-  background: url("../images/slick/icon_arrow_right_inverse.png") center center no-repeat RGBA(255, 255, 255, 0.8);
-  background-size: 30px 30px;
+  background: url("../images/slick/icon_arrow_right_inverse.png") center center no-repeat #f9bd35;
+  background-size: 22px 22px;
+}
+@media screen and (max-width: 767px) {
+  .slick-next {
+    right: 8%;
+  }
 }
 
 .slick-disabled {
@@ -7413,6 +7438,7 @@ table td.num {
   padding-bottom: 3em;
 }
 .mpSlider .col {
+  padding: 4px;
   transition: 0.6s;
 }
 .mpSlider .col .caption {
@@ -7424,6 +7450,7 @@ table td.num {
 }
 .mpSlider .col a {
   color: #222;
+  display: block;
 }
 .mpSlider .col.slick-center {
   transform: scale(1);
@@ -7453,6 +7480,10 @@ table td.num {
 }
 .mpSlider .img-container img {
   max-width: 96%;
+}
+.mpSlider .slick-prev,
+.mpSlider .slick-next {
+  top: calc(50% - 50px);
 }
 @media screen and (max-width: 767px) {
   .mpSlider .slick-prev {
@@ -7562,12 +7593,12 @@ table td.num {
 }
 .adSlider .slick-prev {
   background: url(../vendor/slick/icon_arrow_left_inverse.png) no-repeat center center;
-  background-size: 80%;
+  background-size: 24px 24px;
   left: -15px;
 }
 .adSlider .slick-next {
   background: url(../vendor/slick/icon_arrow_right_inverse.png) no-repeat center center;
-  background-size: 80%;
+  background-size: 24px 24px;
   right: -15px;
 }
 .adSlider .img-container {
@@ -8975,8 +9006,8 @@ a.link:hover, a.link:focus {
 
 .sideFunc {
   position: fixed;
-  right: 1em;
-  bottom: 20%;
+  right: calc((100% - 1200px) / 2 - 90px);
+  bottom: 12%;
   z-index: 98;
 }
 .sideFunc ul {
@@ -9004,7 +9035,7 @@ a.link:hover, a.link:focus {
   z-index: -1;
   top: 50%;
   left: initial;
-  right: -200px;
+  right: -50%;
   width: 190px;
   height: 54px;
   padding-right: 62px;
@@ -9082,6 +9113,11 @@ a.link:hover, a.link:focus {
 }
 .sideFunc .btn-switch:hover:before, .sideFunc .btn-switch:hover:after, .sideFunc .btn-switch:focus-visible:before, .sideFunc .btn-switch:focus-visible:after, .sideFunc .btn-switch.act:before, .sideFunc .btn-switch.act:after {
   transform: translate(-50%, -50%) rotate(45deg);
+}
+@media screen and (max-width: 1410px) {
+  .sideFunc {
+    right: 1em;
+  }
 }
 @media screen and (max-width: 991px) {
   .sideFunc ul {
