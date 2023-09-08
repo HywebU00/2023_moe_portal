@@ -89,7 +89,7 @@ $(function () {
     autoplay: true,
     autoplaySpeed: 5000,
     speed: 1200, 
-    arrows: false,
+    arrows: true,
     focusOnSelect: true,
     dots: true,
     // infinite: true,

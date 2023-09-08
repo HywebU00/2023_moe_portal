@@ -1540,6 +1540,13 @@ kbd kbd {
   background: #ededed;
   cursor: pointer;
 }
+.btn img {
+  width: 22px;
+  height: 22px;
+  margin-left: 10px;
+  display: inline-block;
+  transform: translateY(4px);
+}
 .btn:hover, .btn:focus {
   color: #222;
   outline: none;
@@ -1808,9 +1815,12 @@ kbd kbd {
 .btn-primary:hover [class^=i_]:before, .btn-primary:focus-visible [class^=i_]:before {
   filter: invert(1);
 }
+.btn-primary:hover img, .btn-primary:focus-visible img {
+  filter: invert(1);
+}
 
 .btn-secondary {
-  color: #484848;
+  color: #484848 !important;
   border: solid 1px #c5c5c5 !important;
 }
 .btn-secondary:hover, .btn-secondary:focus-visible {
@@ -3385,7 +3395,7 @@ div.tag ul li a:hover, div.tag ul li a:focus, div.tag ul li a.act {
   left: 0;
   list-style: none;
   text-align: left;
-  animation: showMenu 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  animation: showMenu 0.1s cubic-bezier(0.4, 0.01, 0.165, 0.99);
   font-size: 0.875em;
 }
 .menu ul li ul li {
@@ -6515,6 +6525,7 @@ abbr[title] {
 table {
   width: 100%;
   border-collapse: collapse;
+  margin: 1em auto;
 }
 @media screen and (max-width: 575px) {
   table {
@@ -6578,9 +6589,9 @@ table th {
   }
   .table_list td {
     border: none !important;
-    border-bottom: 1px solid #eee !important;
+    border-bottom: 1px solid #d5d5d5 !important;
     position: relative;
-    padding-left: 35% !important;
+    padding-top: 2.5em;
     white-space: normal;
     text-align: left;
   }
@@ -6589,7 +6600,6 @@ table th {
     position: absolute;
     top: 0.5em;
     left: 0.5em;
-    width: 30%;
     padding-right: 10px;
     white-space: nowrap;
     text-align: left;
@@ -6861,13 +6871,12 @@ table td.num {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
   margin: 0;
   padding: 1em 0;
   list-style-type: none;
 }
 .sub_menu li {
-  flex: 1 1 48%;
+  flex: 0 1 48%;
   margin-bottom: 10px;
   border-radius: 5px;
 }
@@ -7441,6 +7450,9 @@ table td.num {
   width: 100%;
   height: 100%;
   margin: auto;
+}
+.mpSlider .img-container img {
+  max-width: 96%;
 }
 @media screen and (max-width: 767px) {
   .mpSlider .slick-prev {
@@ -8814,14 +8826,6 @@ a.link:hover, a.link:focus {
   margin-bottom: 0.5em;
   color: #2b7b00;
 }
-.Terms .Btns {
-  text-align: center;
-  margin-top: 15px;
-}
-.Terms .Btns i {
-  margin-left: 8px;
-  font-size: 1.2em;
-}
 .Terms .form_grp {
   border-bottom: none;
   display: block;
@@ -8833,6 +8837,15 @@ a.link:hover, a.link:focus {
   width: 100%;
   padding: 0.5em;
   border-radius: 4px;
+}
+
+.Btns {
+  text-align: center;
+  margin: 15px;
+}
+.Btns i {
+  margin-left: 8px;
+  font-size: 1.2em;
 }
 
 .setCPduduHow {
@@ -9081,8 +9094,12 @@ a.link:hover, a.link:focus {
 
 .remark {
   background: #f4f4f4;
-  padding: 2em;
+  padding: 1.5em 2em;
   position: relative;
+}
+.remark .flex-form.form_inline {
+  border-bottom: none;
+  margin: 0;
 }
 .remark::before {
   content: "";
@@ -9092,6 +9109,10 @@ a.link:hover, a.link:focus {
   background: #f9bd35;
   left: 0;
   top: 0;
+}
+
+.handmade p {
+  line-height: 0;
 }
 
 .innerpage.bg_1 {
@@ -9237,6 +9258,15 @@ a.more:hover::before, a.more:focus-visible::before, a.more:focus::before {
 .mp .main .filterSearch .form_title {
   font-size: 0;
   position: absolute;
+}
+.mp .main .flex_col_2 .col {
+  position: relative;
+  padding-bottom: 120px;
+}
+.mp .main .flex_col_2 .col .btn_grp {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 .mp .main ul.resourceList,
 .mp .main ul.linkList,
@@ -9955,7 +9985,7 @@ a.more:hover::before, a.more:focus-visible::before, a.more:focus::before {
   font-size: 0.875em;
   line-height: 1.5em;
   list-style: none;
-  margin: 0;
+  margin: 1em 0;
   padding: 0.8em 1.5em 0.8em;
   border: solid 1px #e4e4e4;
   display: flex;
@@ -10208,7 +10238,8 @@ a.more:hover::before, a.more:focus-visible::before, a.more:focus::before {
   .fatfooter,
   footer,
   .accesskey,
-  .submenu {
+  .submenu,
+  .function_panel {
     display: none;
   }
   /* -------------------------------各別顯示設定----//*/
