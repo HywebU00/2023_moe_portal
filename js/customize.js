@@ -10,7 +10,6 @@ $(function () {
       resizeSensor: true,
     });
   }
-
   // 1)政府輔導資源手冊 按鈕高度，是吃左方icon的高度
   $(document).ready(function() {
     // 初始化
@@ -92,7 +91,7 @@ $(function () {
     arrows: true,
     focusOnSelect: true,
     dots: true,
-    // infinite: true,
+    infinite: true,
     responsive: [{
         breakpoint: 992,
         settings: {
