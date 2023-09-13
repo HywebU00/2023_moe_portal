@@ -7471,11 +7471,11 @@ table td.num {
   height: 100%;
   margin: auto;
 }
-.mpSlider .col.slick-slide .img-container img {
+.mpSlider .col.slick-slide {
   transform: translateY(80px);
   transition: 0.3s;
 }
-.mpSlider .col.slick-slide.slick-current .img-container img {
+.mpSlider .col.slick-slide.slick-center {
   transform: translateY(0);
   transition: 0.3s;
 }
